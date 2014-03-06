@@ -34,7 +34,7 @@ public class GameHelper {
 		comCount++;
 		int incr = 1;
 		if ((comCount % 2) == 1) {
-			incr = gridLegth;
+			incr = gridLength;
 		}
 		
 		while (!success & attempts++ < 200) {
@@ -49,7 +49,7 @@ public class GameHelper {
 					if (location >= gridSize) {
 						success = false;
 					}
-					if (x>0 && (location % gridLenght == 0)){
+					if (x>0 && (location % gridLength == 0)){
 						success = false;
 					}
 				} else {
@@ -66,7 +66,7 @@ public class GameHelper {
 			grid[coords[x]]=1;
 			row =(int) (coords[x] / gridLength);
 			column = coords[x] % gridLength;
-			temp = String.valueOf(alphabet.charAt(colum));
+			temp = String.valueOf(alphabet.charAt(column));
 			alphaCells.add(temp.concat(Integer.toString(row)));
 			x++;
 			// System.out.println("Координаты " + x + alphaCells.get(x-1));

@@ -19,7 +19,7 @@ public class DotComBust {
 		dotComsList.add(three);
 		
 		// Выводим краткие инструкции для пользователя
-		System.out.println("Ваша цель - потопить три "сайта".");
+		System.out.println("Ваша цель - потопить три \"сайта\".");
 		System.out.println("Pets.com, eToys.com, Go2.com");
 		System.out.println("Попытайтесь потопить их за минимальное количество ходов");
 		
@@ -47,7 +47,7 @@ public class DotComBust {
 		// Инкрементируем количество попыток, которые сделал пользователь
 		numOfGuesses++;
 		// Подразумеваем промах, пока не выяснили обратного
-		String resut = "Мимо";
+		String result = "Мимо";
 		
 		//Повторяем это для всех объектов DotCom в списке
 		for (DotCom dotComToTest : dotComsList) {
@@ -69,7 +69,7 @@ public class DotComBust {
 	
 	private void finishGame() {
 		//  Выводим сообщение о том, как пользователь прошёл игру
-		System.out.println("Все "сайты" ушли ко дну! Ваши акции теперь ничего не стоят.");
+		System.out.println("Все \"сайты\" ушли ко дну! Ваши акции теперь ничего не стоят.");
 		if (numOfGuesses <= 18) {
 			System.out.println("Это заняло у вас всго " + numOfGuesses + " попыток.");
 			System.out.println("Вы успели выбраться до того, как ваши вложения утонули.");

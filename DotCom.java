@@ -23,5 +23,6 @@ public class DotCom {
 				result = "Попал";
 			}
 		}
+		return result;
 	}	
 }
