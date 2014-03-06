@@ -12,15 +12,15 @@ public class DotCom {
 		name = n;
 	}
 	public String checkYourself(String userInput) {
-		String result = "╠шью";
+		String result = "Мимо";
 		int index = locationCells.indexOf(userInput);
 		if (index >= 0 ) {
 			locationCells.remove(index);
 			if (locationCells.isEmpty()) {
-				result = "╧юЄюяшы";
-				System.out.println("╬щ! ┬√ яюЄюяшыш " + name + "   :(");				
+				result = "Потопил";
+				System.out.println("Ой! Вы потопили " + name + "   :(");				
 			} else {
-				result = "╧юяры";
+				result = "Попал";
 			}
 		}
 		return result;
